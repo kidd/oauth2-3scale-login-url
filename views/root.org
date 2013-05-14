@@ -6,12 +6,12 @@
 
 * Endpoints
 
-** /login
+** [[/login]]
    We need a login form that you should validate against your
    database. in case of accepting it, redirect the user to the nginx /callback endpoint
 
-** /read
+** [[/read]]
    test endpoint.
 
-** /write
+** [[/write]]
    test endpoint.
