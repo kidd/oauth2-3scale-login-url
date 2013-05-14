@@ -4,6 +4,10 @@ require 'sinatra'
 nginx_redirect_uri =  "http://api.2445579853692.proxy.3scale.net:80/callback?"  #nginx callback
 
 
+get("/") do
+  erb :root
+end
+
 get("/login") do
   @my_local_state = params[:state]
   @plan_id = params[:scope]
