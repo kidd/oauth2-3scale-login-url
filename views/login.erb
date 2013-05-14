@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <form name="input" action="/log" method="post">
+      Login in plan: <%= @plan_id %>
+      <br />
+      Will have the token: <%= @pre_token %>
+      <br />
+      Username: <input type="text" name="user">
+      <br/>
+      Pass: <input type="text" name="password">
+      <input type="hidden" name="state" value="<%= @my_local_state %>">
+      <input type="hidden" name="plan_id" value="<%= @plan_id %>">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
