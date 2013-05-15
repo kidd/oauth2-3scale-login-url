@@ -36,10 +36,10 @@ end
 
 # Why I can't ping this enpoint bypassing the nginx port?
 get("/read") do
-  erb :secure
+  erb :secure, :layout => false
 end
 
 # Why I can't ping this enpoint bypassing the nginx port?
 get("/write") do
-  erb :write
+  erb :write, :layout => false
 end
